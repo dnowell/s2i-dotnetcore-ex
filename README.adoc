@@ -2,7 +2,7 @@
 = .NET Core Sample App for OpenShift
 
 This repository contains an example project that can be built using the
-https://github.com/redhat-developer/s2i-dotnetcore[s2i-dotnetcore] builder
+https://github.com/dnowell/s2i-dotnetcore[s2i-dotnetcore] builder
 image, which can be used to create reproducible Docker images from your .NET
 Core project's source code. The resulting images can be run using
 https://docker.com[Docker] or deployed to OpenShift.
@@ -28,14 +28,14 @@ For .NET Core 1.0 use:
 
 [source]
 ----
-oc new-app registry.access.redhat.com/dotnet/dotnetcore-10-rhel7~https://github.com/redhat-developer/s2i-dotnetcore-ex#dotnetcore-1.0 --name=aspnet-app --context-dir=app
+oc new-app registry.access.redhat.com/dotnet/dotnetcore-10-rhel7~https://github.com/dnowell/s2i-dotnetcore-ex#dotnetcore-1.0 --name=aspnet-app --context-dir=app
 ----
 
 For .NET Core 1.1 use:
 
 [source]
 ----
-oc new-app registry.access.redhat.com/dotnet/dotnetcore-11-rhel7~https://github.com/redhat-developer/s2i-dotnetcore-ex#dotnetcore-1.1 --name=aspnet-app --context-dir=app
+oc new-app registry.access.redhat.com/dotnet/dotnetcore-11-rhel7~https://github.com/dnowell/s2i-dotnetcore-ex#dotnetcore-1.1 --name=aspnet-app --context-dir=app
 ----
 
 Next, create a new route so that the application is accessible outside the OpenShift environment
